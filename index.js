@@ -66,15 +66,6 @@ function appendItemToShoppingListEl(item) {
         
         remove(exactLocationOfItemInDB)
     })
-
-    newEl.addEventListener("click", function() {
-        if(newEl.style.textDecoration == "line-through") {
-            newEl.style.textDecoration = "none" 
-        } else {
-            newEl.style.textDecoration = "line-through"
-        }
-        
-    })
     
     shoppingListEl.append(newEl)
 }
